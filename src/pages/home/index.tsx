@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
@@ -43,8 +44,23 @@ const Home = () => {
                 </h2>
                 <div className="flex flex-col items-start justify-center gap-[22px] w-[35%] animate-fade-in-right animate-delay-700">
                   <h2 className="text-[32px] font-medium leading-[32px] tracking-[0px] font-editors-note hover-lift">
-                    SNAP benefits won't go <br /> out Nov. 1. 'The well has{" "}
-                    <br /> run dry,' USDA says.
+                    <Typewriter
+                      options={{
+                        autoStart: true,
+                        loop: false,
+                        cursor: "",
+                      }}
+                      onInit={(typewriter) => {
+                        typewriter
+                          .changeDelay(50)
+                          .typeString(
+                            "SNAP benefits won't go" +
+                              "\nout Nov. 1. 'The well has" +
+                              "\nrun dry,' USDA says."
+                          )
+                          .start();
+                      }}
+                    />
                   </h2>
                   <div className="flex justify-start gap-3">
                     <h3 className="font-inter font-medium leading-[16px] text-[16px] hover-lift">
@@ -53,8 +69,21 @@ const Home = () => {
                       government <br /> shutdown.
                     </h3>
                     <p className="font-editors-note font-medium text-[26px] leading-[32px] hover-lift animate-float">
-                      Degens Benefit would go out Nov.1. "Everyone broke
-                      trying'....
+                      <Typewriter
+                        options={{
+                          autoStart: true,
+                          loop: false,
+                          cursor: "",
+                        }}
+                        onInit={(typewriter) => {
+                          typewriter
+                            .changeDelay(50)
+                            .typeString(
+                              "Degens Benefit would go out Nov.1. 'Everyone broke trying'...."
+                            )
+                            .start();
+                        }}
+                      />
                     </p>
                   </div>
                 </div>
@@ -71,17 +100,55 @@ const Home = () => {
 
             <div className="absolute top-[30%] flex flex-col gap-[10px] right-0 w-[24%] pl-2 text-[15px] animate-fade-in-right animate-delay-600">
               <p className="font-medium font-editors-note hover-lift">
-                SNAP benefits won't go out Nov. 1. 'The well has run dry,' USDA
-                says.
+                <Typewriter
+                  options={{
+                    autoStart: true,
+                    loop: false,
+                    cursor: "",
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .changeDelay(50)
+                      .typeString(
+                        "SNAP benefits won't go out Nov. 1. 'The well has run dry,' USDA says."
+                      )
+                      .start();
+                  }}
+                />
               </p>
               <p className="font-editors-note pr-5 leading-[20px] font-medium hover-lift animate-float">
-                Degens Benefit would go out Nov.1.
+                <Typewriter
+                  options={{
+                    autoStart: true,
+                    loop: false,
+                    cursor: "",
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .changeDelay(50)
+                      .typeString("Degens Benefit would go out Nov.1.")
+                      .start();
+                  }}
+                />
               </p>
             </div>
           </div>
           <p className="w-[55%] pl-3 text-sm font-medium font-intr animate-fade-in-up animate-delay-700 hover-lift">
-            Come this Saturday, SNAP recipients will not see their November
-            benefits due to the federal government shutdown.
+            <Typewriter
+              options={{
+                autoStart: true,
+                loop: false,
+                cursor: "",
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .changeDelay(50)
+                  .typeString(
+                    "Come this Saturday, SNAP recipients will not see their November benefits due to the federal government shutdown."
+                  )
+                  .start();
+              }}
+            />
           </p>
         </div>
       </div>

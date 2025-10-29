@@ -347,6 +347,11 @@ a {
 
 @import "tailwindcss";
 
+/* Typewriter line breaks */
+.typewriter-text {
+  white-space: pre-line;
+}
+
 .bg-cover {
   background-image: url("./assets/newBg.png");
   background-size: cover;
